@@ -1,4 +1,4 @@
-package com.zaptain.rnd;
+package com.zaptain.common;
 
 public enum Event {
     GO

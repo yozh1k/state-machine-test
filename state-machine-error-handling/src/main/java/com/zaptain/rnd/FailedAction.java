@@ -1,5 +1,7 @@
 package com.zaptain.rnd;
 
+import com.zaptain.common.Event;
+import com.zaptain.common.State;
 import org.springframework.statemachine.StateContext;
 import org.springframework.statemachine.action.Action;
 

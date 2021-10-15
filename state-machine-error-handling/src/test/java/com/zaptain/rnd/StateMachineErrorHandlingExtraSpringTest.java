@@ -1,10 +1,11 @@
 package com.zaptain.rnd;
 
+import com.zaptain.common.Event;
+import com.zaptain.common.State;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Spy;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.listener.StateMachineListener;
@@ -20,8 +21,7 @@ import static org.mockito.Mockito.verify;
  * Тест демонстрирует, машина не меняет состояние, при этом блок обработки ошибок listener'а не вызывается
  */
 @RunWith( SpringRunner.class )
-@ContextConfiguration(classes = Config.class)
-@Configuration
+@ContextConfiguration(classes = SmListenerConfig.class)
 @EnableStateMachine
 public class StateMachineErrorHandlingExtraSpringTest {
     @Autowired

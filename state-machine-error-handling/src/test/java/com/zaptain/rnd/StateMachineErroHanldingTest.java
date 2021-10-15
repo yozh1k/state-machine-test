@@ -1,8 +1,7 @@
 package com.zaptain.rnd;
 
-import com.zaptain.rnd.Event;
-import com.zaptain.rnd.FailedAction;
-import com.zaptain.rnd.State;
+import com.zaptain.common.Event;
+import com.zaptain.common.State;
 import org.junit.Test;
 import org.springframework.statemachine.action.Action;
 import org.springframework.statemachine.config.StateMachineBuilder;

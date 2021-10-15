@@ -1,10 +1,7 @@
 package com.zaptain.rnd;
 
-import com.zaptain.rnd.EmptyErrorInterceptor;
-import com.zaptain.rnd.Event;
-import com.zaptain.rnd.FailedAction;
-import com.zaptain.rnd.State;
-import com.zaptain.rnd.SwallowErrorInterceptor;
+import com.zaptain.common.Event;
+import com.zaptain.common.State;
 import org.junit.Test;
 import org.mockito.Mockito;
 import org.springframework.statemachine.StateMachine;

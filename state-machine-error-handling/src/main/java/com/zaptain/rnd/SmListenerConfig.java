@@ -1,5 +1,7 @@
 package com.zaptain.rnd;
 
+import com.zaptain.common.Event;
+import com.zaptain.common.State;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.StateMachine;
@@ -10,7 +12,7 @@ import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 
 @EnableStateMachine
 @Configuration
-public class Config {
+public class SmListenerConfig {
     @Bean
     public StateMachine<State, Event> stateMachine() throws Exception {
         StateMachineBuilder.Builder<State, Event> builder = StateMachineBuilder.builder();
