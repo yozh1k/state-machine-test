@@ -23,4 +23,5 @@
 Для обоработки ошибок самой state machine можно использовать два чуть более сложных подхода:
 - реализация интерфейса [StateMachineInterceptor](https://docs.spring.io/spring-statemachine/docs/current/api/index.html?org/springframework/statemachine/guard/Guard.html), особенностью которой является возможность "проглатывать" ошибки, чтобы заглушить ее дальнейшую обработку
 - наследование класса [StateMachineListenerAdapter](https://docs.spring.io/spring-statemachine/docs/current/api/org/springframework/statemachine/listener/StateMachineListenerAdapter.html), использующее механизмы Spring, при этом налагая на конфигурирование StateMachine соответствующие требования 
+
 При этом, тривиальная обработка ошибок, возникших при работе Transition Action'ов, указанными выше способоми невозможна
