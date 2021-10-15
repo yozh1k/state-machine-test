@@ -4,6 +4,7 @@
 достижения этой цели можо воспользоваться 2 вариантами: 
 - [ErrorAction](https://docs.spring.io/spring-statemachine/docs/current/api/org/springframework/statemachine/config/configurers/AbstractTransitionConfigurer.html#addAction-org.springframework.statemachine.action.Action-org.springframework.statemachine.action.Action-) 
 - [Guard](https://docs.spring.io/spring-statemachine/docs/current/api/index.html?org/springframework/statemachine/guard/Guard.html)
+
 Необходимо проверить возможность использования указанных вариантов, перечислить различия и выбрать наиболее подходящий
 ### Подход к решению
 Для проверки было решено написать набор тестов, включающий:
